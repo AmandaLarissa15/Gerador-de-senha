@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Senhas Retrô</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Press Start 2P', monospace;
+      background-color: #111;
+      color: #0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }.container {
+  max-width: 600px;
+  width: 100%;
+  background: #222;
+  border: 2px solid #0f0;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 15px #0f0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+label, input, button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+input, button {
+  font-family: 'Press Start 2P', monospace;
+  padding: 0.5rem;
+  background: #000;
+  color: #0f0;
+  border: 1px solid #0f0;
+}
+
+button:hover {
+  background: #0f0;
+  color: #000;
+  cursor: pointer;
+}
+
+.feedback {
+  margin-top: 0.5rem;
+  color: #0ff;
+}
+
+.forca {
+  height: 10px;
+  margin-top: 0.5rem;
+  background: #f00;
+  transition: width 0.3s ease, background 0.3s ease;
+}
+
+.cadeado {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  animation: girar 1s ease-in-out infinite;
+}
+
+@keyframes girar {
+  0% { transform: rotate(0deg); }
+  50% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 10px;
+    padding: 1rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container" aria-label
